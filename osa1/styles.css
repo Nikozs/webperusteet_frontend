@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+}
+
+
+section {
+    width: 50%; float: left;
+}
+
+#section-1 {
+ background-color: white;
+ height: 100vh; 
+ align-items: center;
+ justify-content: center;
+}
+
+#section-2 {
+    background-color: #aaaaaa;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;    
+}
+
+article {
+    margin: 50px 50px 50px 50px
+}
+
+#artikkelidivi {
+    box-shadow: 2px 5px 5px 5px #aaaaaa;
+}
+
+#asidedivi {
+
+}
+
+aside {
+    margin: 50px 50px 50px 50px
+}
+
+.morePuppiesdivi
+{
+    position: absolute;
+    z-index: auto;
+    bottom: 5px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#CoolButton {
+    font-weight: bold;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20em;  
+    background-color: rgb(227, 236, 236);
+}
+h1 {
+    font-family: 'Aldrich';font-size: 42px;
+}
+#versio {
+    font-family: 'Aldrich';font-size: 22px;
+}
+
+ul{
+    list-style-type: decimal;
+}
+
+li  {
+    padding-bottom: 10px;
+}
