@@ -1,0 +1,152 @@
+body {
+  margin: 0px;
+}
+
+section {
+  width: 50%;
+  float: left;
+}
+
+#section-1 {
+  background-color: white;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-2 {
+  background-color: #aaaaaa;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  margin: 50px 50px 50px 50px;
+}
+
+#artikkelidivi {
+  box-shadow: 2px 5px 5px 5px #aaaaaa;
+}
+
+#artikkelidivi img {
+  height: 100%;
+  width: 100%;
+}
+
+#asidedivi {
+    font-size: 1em;
+}
+
+aside {
+  margin: 50px 50px 50px 50px;
+}
+
+.morePuppiesdivi {
+  position: absolute;
+  z-index: auto;
+  bottom: 5px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#CoolButton {
+  font-weight: bold;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20em;
+  background-color: rgb(227, 236, 236);
+}
+
+#CoolButton:hover {
+    background-color: rgb(81, 194, 16);
+}
+
+h1 {
+  font-family: "Aldrich";
+  font-size: 42px;
+}
+
+#versio {
+  font-family: "Aldrich";
+  font-size: 22px;
+}
+
+ul {
+  list-style-type: decimal;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .flexcontainer {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    flex: 50%;
+    flex-flow: column wrap;
+    flex-shrink: 0;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  section {
+      width: 100%;
+  }
+
+  #section-1 {
+    padding: 0px;
+    display: flex;
+    flex-flow: column wrap; 
+    max-height: 500px; 
+    overflow: hidden;
+  }
+
+  #section-2 {
+    height: 100vh;
+    flex-shrink: 0;
+  }
+
+  #asidedivi h1 {
+      font-size: 2.0em;
+  }
+
+  .morePuppiesdivi{
+      display: none;
+  }
+
+  ul {
+      font-size: 0.9em;
+  }
+
+  :empty {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+    #asidedivi h1 {
+        font-size: 1.2em;
+    }
+}
