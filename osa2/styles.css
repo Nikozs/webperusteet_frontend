@@ -11,7 +11,8 @@ body {
     flex-flow: row wrap;
     flex-shrink: 0;
     /*margin: 0 auto;*/
-    overflow: hidden;
+    overflow: auto;
+    height: 100vh;
   }
 
 /*section {
@@ -28,7 +29,7 @@ body {
 
 #section-2 {
   background-color: #aaaaaa;
-  height: 200vh;
+  height: 100vh;
   align-items: center;
   flex: 50%;
   justify-content: center;
@@ -116,12 +117,12 @@ li {
     display: -webkit-flex;     /* NEW - Chrome */
     display: flex;
     flex: 50%;
-    flex-flow: column wrap;
-    flex-shrink: 0;
+    flex-wrap:  wrap;
     position: absolute;
     margin: 0 auto;
     overflow: hidden;
     height: 100vh;
+    overflow-y: auto;
   }
 
   section {
@@ -131,7 +132,7 @@ li {
   #section-1 {
     padding: 0px;
     display: flex;
-    flex-flow: column wrap; 
+    flex-flow: wrap; 
     max-height: 500px; 
     overflow: hidden;
   }
